@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  mode: "jit",
   theme: {
     extend: {
       colors: {
-
+        primary: "#7E6D94",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-      }
+      },
     },
     screens: {
       xs: "480px",
