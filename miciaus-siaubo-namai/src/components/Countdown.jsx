@@ -3,7 +3,7 @@ import styles from "../style";
 
 const Countdown = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2023-10-26T19:00:00+03:00");
+    const targetDate = new Date("2023-10-26T20:00:00+03:00");
     const currentDate = new Date();
     const difference = targetDate - currentDate;
 
@@ -37,14 +37,14 @@ const Countdown = () => {
   return (
     <section
       id="countdown"
-      className={`${styles.paddingY} ${styles.flexCenter} flex-col absolute bottom-0 z-10`}
+      className={`${styles.paddingY} ${styles.flexCenter} flex-col`}
     >
-      <div className="flex flex-1 items-center justify-center flex-col">
-        <h1 className="flex-1 font-poppins font-bold ss:text-[32px] text-red-500 dark:text-dark-primary text-[20px] spooky-title">
+      <div className="flex flex-1 items-center justify-center flex-col my-10 py-20">
+        <h1 className="flex-1 font-poppins font-bold md:text-[36px] ss:text-[25px] sm:text-[30px] text-[18px] dark:text-dark-primary spooky-title">
           Iki renginio pradžios liko
         </h1>
         <p>
-          <span className="flex-1 font-poppins font-bold xl:text-[50px] md:text-[36px] ss:text-[25px] xs:text-[35px] text-red-500 dark:text-dark-primary  spooky-title">
+          <span className="flex-1 font-poppins font-bold md:text-[89px] ss:text-[58px] sm:text-[60px] text-[45px] dark:text-dark-primary  spooky-title">
             {timeLeft}
           </span>
         </p>

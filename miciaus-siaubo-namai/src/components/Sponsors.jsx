@@ -2,10 +2,12 @@ import React from 'react';
 import { sponsors } from '../constants'; 
 import styles from '../style';
 
-const Card = ({ image }) => {
+const Card = ({ index, image, link }) => {
   return (
-    <div className='flex mt-20'>
-      <img src={image} alt="logo" className="w-[300px] object-contain card-hover"/>
+    <div className='flex md:mx-20 my-20'>
+      <a href={link} className="w-[300px] object-contain card-hover" target="_blank">
+        <img src={image} alt="logo"/>
+      </a>
     </div>
   )
 }
@@ -14,13 +16,13 @@ const Sponsors = () => {
   return (
     <section id='team' className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
       <div className='flex flex-col h-full'>
-        <h1 className="flex-1 font-poppins font-bold ss:text-[72px] mb-10 text-[#ed7607] dark:text-dark-primary text-[52px] text-center ss:leading-[100.8px] leading-[75px] spooky-title">
+        <h1 className="flex-1 font-poppins font-bold md:text-[89px] ss:text-[58px] sm:text-[60px] text-[45px] mb-10 pb-20 text-[#ed7607] dark:text-dark-primary text-center ss:leading-[100.8px] leading-[75px] spooky-title">
           Renginio rėmėjai
         </h1>
-        <div className='flex flex-col items-center justify-center w-full relative'>
-          {sponsors.map((card, index) => {
+        <div className='flex flex-col md:flex-row items-center justify-center w-full relative'>
+          {sponsors.map((card) => {
             return (
-              <Card key={index} image={card.icon} />
+              <Card key={card.id} {...card} image={card.image} />
             )
           })}
         </div>

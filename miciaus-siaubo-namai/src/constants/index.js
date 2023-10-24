@@ -1,16 +1,47 @@
-import { zaliLogo, gaidelisLogo, catLogo, cultLogo, catLogoNoTitle, catLogoBgNoTitle } from "../assets";
+import { zaliLogo, gaidelisLogo, benediktaPic, mindaugasPic, mindaugas2Pic, saulePic, glorijaPic } from "../assets";
 
 export const sponsors = [
     {
         id: "zali",
-        icon: zaliLogo,
-    },
-    {
-        id: "cult",
-        icon: cultLogo,
+        image: zaliLogo,
+        link: "https://zalizali.lt/",
     },
     {
         id: "gaidelis",
-        icon: gaidelisLogo,
+        image: gaidelisLogo,
+        link: "https://gaidelisklasika.lt/",
     },
-]
+];
+
+export const leaders = [
+    {
+        id: "1",
+        image: mindaugasPic,
+        role: "IT",
+        name: "MINDAUGAS RAMONAS",
+    },
+    {
+        id: "2",
+        image: saulePic,
+        role: "MARKETINGAS",
+        name: "SAULĖ GYLYTĖ",
+    },
+    {
+        id: "3",
+        image: benediktaPic,
+        role: "ORGANIZAVIMAS",
+        name: "BENEDIKTA GLIOŽERYTĖ",
+    },
+    {
+        id: "4",
+        image: glorijaPic,
+        role: "ORGANIZAVIMAS",
+        name: "GLORIJA KOTRYNA NOSOVAITĖ",
+    },
+    {
+        id: "5",
+        image: mindaugas2Pic,
+        role: "KOMUNIKACIJA",
+        name: "MARIUS SENIUCAS",
+    },
+];
