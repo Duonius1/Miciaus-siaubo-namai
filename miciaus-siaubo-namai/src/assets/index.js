@@ -11,5 +11,5 @@ export {
     catLogo,
     cultLogo,
     catLogoNoTitle,
-    catLogoBgNoTitle,
+    catLogoBgNoTitle
 };

@@ -5,13 +5,43 @@
 @tailwind utilities;
 
 :root {
-  --black-gradient: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --scrollbar-track-color: #333; /* Change this color as needed */
+  --scrollbar-thumb-color: #555; /* Change this color as needed */
+}
+
+/* Apply the scrollbar styles */
+/* For WebKit-based browsers (Chrome, Safari) */
+/* Adjust these styles as needed */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 8px;
+}
+
+/* Apply the scrollbar styles for the horizontal scrollbar if needed */
+::-webkit-scrollbar-thumb:horizontal {
+  background: var(--scrollbar-thumb-color);
+}
+
+/* Apply the scrollbar styles on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Change this color for hover effect */
+}
+
+/* For Firefox */
+/* These styles may work in Firefox, but Firefox has limited support for styling scrollbars */
+/* You can adjust them as needed */
+/* These may not work in some versions of Firefox */
+/* Adjust these styles as needed */
+* {
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
 }
 
 * {
@@ -72,27 +102,26 @@
   }
 }
 
-.content.shake {
-  animation: shake 0.5s ease-in-out;
+.spooky-title {
+  animation: textGlow 2s infinite alternate;
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
+@keyframes textGlow {
+  0% {
+    color: rgba(255, 0, 0, 0.3);
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    color: #ed7607;
+    text-shadow: none;
+  }
 }
 
-.feedback-card {
-  background: transparent;
-}
-
-.feedback-card:hover {
-  box-shadow: var(--card-shadow);
-}
-
-.popup-effect {
-  box-shadow: var(--card-shadow);
+.card-hover:hover {
   transition: transform 0.3s ease;
+  transform: scale(1.10); /* Adjust the scaling factor as needed */
 }
 
-.popup-effect:hover {
-  transform: scale(1.1);
-}
+
+
