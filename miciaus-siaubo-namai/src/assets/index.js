@@ -10,6 +10,7 @@ import mindaugasPic from "./Mindaugas1cropped.jpg";
 import mindaugas2Pic from "./Mindaugas2cropped.png";
 import glorijaPic from "./Glorija1cropped.jpg";
 import saulePic from "./Saule1cropped.jpg";
+import discordLogo from "./discord2.png";
 
 export {
     zaliLogo,
@@ -24,4 +25,5 @@ export {
     mindaugas2Pic,
     saulePic,
     glorijaPic,
+    discordLogo,
 };

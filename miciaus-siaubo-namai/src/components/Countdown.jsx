@@ -44,7 +44,7 @@ const Countdown = () => {
           Iki renginio pradžios liko
         </h1>
         <p>
-          <span className="flex-1 font-poppins font-bold md:text-[89px] ss:text-[58px] sm:text-[60px] text-[45px] dark:text-dark-primary  spooky-title">
+          <span className="flex-1 font-poppins font-bold md:text-[89px] ss:text-[58px] sm:text-[60px] text-[45px] dark:text-dark-primary spooky-title">
             {timeLeft}
           </span>
         </p>
