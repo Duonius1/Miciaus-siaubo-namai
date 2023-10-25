@@ -1,4 +1,4 @@
-import { zaliLogo, gaidelisLogo, benediktaPic, mindaugasPic, mindaugas2Pic, saulePic, glorijaPic, biliardas } from "../assets";
+import { zaliLogo, gaidelisLogo, benediktaPic, mindaugasPic, mariusPic, saulePic, glorijaPic, biliardas } from "../assets";
 
 export const sponsors = [
     {
@@ -45,7 +45,7 @@ export const leaders = [
     },
     {
         id: "5",
-        image: mindaugas2Pic,
+        image: mariusPic,
         role: "KOMUNIKACIJA",
         name: "MARIUS SENIUCAS",
     },
