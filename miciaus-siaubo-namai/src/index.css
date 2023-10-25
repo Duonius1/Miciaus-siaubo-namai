@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.background-primary {
+  height: 100%;
+  background-color: #03051b;
+  overflow: hidden;
+  overscroll-behavior-y: contain;
+}
 
 * {
   scroll-behavior: smooth;
@@ -69,6 +75,10 @@
 
 .text-shadow {
   text-shadow: 0 0 35px rgba(237, 118, 7, 0.8);
+}
+
+.gradient-overlay {
+  background: linear-gradient(to bottom, rgba(31, 2, 50, 0), #03051b);
 }
 
 

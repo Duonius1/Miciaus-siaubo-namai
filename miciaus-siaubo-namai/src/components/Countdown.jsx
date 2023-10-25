@@ -40,11 +40,11 @@ const Countdown = () => {
       className={`${styles.paddingY} ${styles.flexCenter} flex-col`}
     >
       <div className="flex flex-1 items-center justify-center flex-col my-10 py-20">
-        <h1 className="flex-1 font-poppins font-bold md:text-[36px] ss:text-[25px] sm:text-[30px] text-[18px] dark:text-dark-primary spooky-title">
+        <h1 className="flex-1 font-poppins text-center font-bold md:text-[36px] ss:text-[25px] sm:text-[30px] xs:text-[18px] text-[15px] dark:text-dark-primary spooky-title">
           Iki renginio pradžios liko
         </h1>
         <p>
-          <span className="flex-1 font-poppins font-bold md:text-[89px] ss:text-[58px] sm:text-[60px] text-[45px] dark:text-dark-primary spooky-title">
+          <span className="flex-1 font-poppins font-bold md:text-[89px] ss:text-[40px] sm:text-[60px] xs:text-[30px] text-[25px] dark:text-dark-primary spooky-title">
             {timeLeft}
           </span>
         </p>
