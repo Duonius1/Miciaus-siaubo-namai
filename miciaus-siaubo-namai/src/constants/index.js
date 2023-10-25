@@ -24,7 +24,7 @@ export const leaders = [
         id: "2",
         image: saulePic,
         role: "MARKETINGAS",
-        name: "SAULĖ GYLYTĖ",
+        name: "SAULE GYLYTE",
     },
     {
         id: "3",
