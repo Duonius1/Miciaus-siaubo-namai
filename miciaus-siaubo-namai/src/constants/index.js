@@ -1,4 +1,4 @@
-import { zaliLogo, gaidelisLogo, benediktaPic, mindaugasPic, mindaugas2Pic, saulePic, glorijaPic } from "../assets";
+import { zaliLogo, gaidelisLogo, benediktaPic, mindaugasPic, mindaugas2Pic, saulePic, glorijaPic, biliardas } from "../assets";
 
 export const sponsors = [
     {
@@ -10,6 +10,11 @@ export const sponsors = [
         id: "gaidelis",
         image: gaidelisLogo,
         link: "https://gaidelisklasika.lt/",
+    },
+    {
+        id: "biliardas",
+        image: biliardas,
+        link: "https://www.facebook.com/knbiliardo.klubas/?locale=lt_LT",
     },
 ];
 
